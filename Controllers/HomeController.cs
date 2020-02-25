@@ -15,14 +15,14 @@ namespace WhoLetDerHundOut.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "We know dogs are exciting but please take a second to learn about the creators.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Help()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "This is the help page.  Not sure why you would need help this site is very simple.";
 
             return View();
         }
