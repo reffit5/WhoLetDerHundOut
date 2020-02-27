@@ -40,7 +40,7 @@ namespace WhoLetDerHundOut.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Dog dog = db.Dog.Find(DogId);
+            Dog dog = db.Dogs.Find(id);
             if (dog == null)
             {
                 return HttpNotFound();

@@ -11,7 +11,10 @@ namespace WhoLetDerHundOut.Models
     {
          [Display (Name ="Breed ID")]
         public int BreedId { get; set; }
+        [StringLength(20, ErrorMessage = "Breed Name cannot be longer than 20 characters")]
+        [Display(Name = "Breed Name")]
         public string BreedName { get; set; }
+        [StringLength(30, ErrorMessage = "Country cannot be longer than 30 characters")]
         public string Country { get; set; }
         public string Photo { get; set; }
 
